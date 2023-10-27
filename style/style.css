@@ -646,7 +646,7 @@ form.search :where(i:last-child) {
 }
 
 .scrollto .wrapper::-webkit-scrollbar-thumb {
-    --border-color: var(var(var(--white-color)));
+    --border-color: var(--white-color);
     background-color: var(--ligth-color);
     border: 3px solid var(--ligth-color);
     border-radius: 20px;
@@ -794,12 +794,12 @@ main>div .heading {
     --gri-col: 260px;
 }
 
-:is(.guide) .dot-image .thumbnail {
+:is(.guide, .fromblog) .dot-image .thumbnail {
     position: relative;
     opacity: unset;
 }
 
-.guide .dot-image .thumbnail img {
+:is(.guide, .fromblog) .dot-image .thumbnail img {
     width: 100%;
 }
 
@@ -815,7 +815,7 @@ main>div .heading {
 
 /* SCROOL LATERAL RESPONSIVIDADE */
 
-.guide .wrapper .item {
+.scrollto .wrapper .item {
     width: 290px;
     scroll-snap-align: start;
     flex-shrink: 0;
@@ -871,13 +871,14 @@ main>div .heading {
     justify-content: center;
 }
 
-.bycats .heading > span {
+.bycats .heading>span {
     font-family: var(--second-font);
     font-size: 32px;
     margin-right: 20px;
 }
 
-.bycats .heading > span, .opt-trigger {
+.bycats .heading>span,
+.opt-trigger {
     height: 44px;
     display: flex;
     align-items: center;
@@ -920,18 +921,80 @@ main>div .heading {
     color: var(--white-color);
 }
 
+.sort-data {
+    display: none;
+    animation: var(--fade);
+}
+
+.sort-data.active {
+    display: block;
+}
 
 
+/* ------------------------------ *
+    #BANNER
+* ------------------------------ */
 
+.banner {
+    background-color: var(--ligth-color);
+    background-image: url(./../assets/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-origin: border-box;
+}
 
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
 
+.banner .content span {
+    font-size: var(--fs-14);
+    text-transform: uppercase;
+}
 
+.banner h3 {
+    --fs-max: 80px;
+}
 
+/* ------------------------------ *
+    #FROMBLOG
+* ------------------------------ */
 
+.fromblog .dot-title {
+    font-family: 'Prata', serif;
+    --fs14: 18px;
+    --fw600: 400;
+    margin-top: 15px;
+}
 
+.fromblog .dot-info > a {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid var(--dark-color);
+    color: var(--grey-color);
+    padding: 1px 10px;
+    transition: var(--transiction-background), var(--transiction-border), var(--transiction-color);
+}
 
+.fromblog .dot-info > a:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-color: var(--dark-color);
+}
 
+.fromblog .button {
+    text-align: center;
+    margin-top: 20px;
+}
 
+/* ------------------------------ *
+    #INSTRAGRAM
+* ------------------------------ */
 
 
 
@@ -1048,6 +1111,25 @@ main>div .heading {
         border-color: var(--dark-color);
     }
 
+    .scrollto .wrapper {
+        --display: grid;
+        padding: 0;
+        overflow: unset;
+        scroll-snap-type: unset;
+        overscroll-behavior-inline: unset;
+    }
+
+    .scrollto .wrapper .item {
+        width: unset;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner {
+        background-size: contain;
+        background-position-x: right;
+    }
 }
 
 @media (max-width: 480px) {
