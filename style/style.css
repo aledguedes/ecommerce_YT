@@ -1116,6 +1116,104 @@ main>div .heading {
     font-size: 13px;
 }
 
+/* ------------------------------ *
+    #SINGLEPAGE
+* ------------------------------ */
+
+/* ------------------------------ *
+    #BREADCUMB
+* ------------------------------ */
+
+/* reset */
+.breadcumb.list-inline a {
+    font-size: 16px;
+}
+
+.breadcumb {
+    width: 100%;
+    line-height: initial;
+    padding: 30px 0 50px;
+}
+
+.breadcumb ul {
+    justify-content: center;
+}
+
+.breadcumb ul li {
+    position: relative;
+    margin-right: 10px;
+}
+
+.breadcumb ul li:not(:first-child) {
+    padding-left: 25px;
+}
+
+.breadcumb ul li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../assets/right_arrow_icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcumb ul:where(li, li, a) {
+    font-size: var(--fs-14);
+    padding: 0;
+}
+
+.breadcumb ul li:last-child {
+    color: var(--grey-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ------------------------------ *
+    #PRODUCT IMAGE
+* ------------------------------ */
+
+.product .wrapper {
+    --grid-col: 331px;
+}
+
+.product .main-image img {
+    width: 100%;
+}
+
+.product .outer-thumb {
+    display: none;
+}
+
+.product .outer-thumb .item {
+    height: fit-content !important;
+    cursor: pointer;
+}
+
+.product .thumb-wrap {
+    position: relative;
+    width: 70px;
+    height: 90px;
+}
+
+.product .outer-thumb .swiper-slide-thumb-active > div,
+.product .outer-thumb .item:hover {
+    border: 1px solid var(--grey-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1252,6 +1350,34 @@ main>div .heading {
     .banner {
         background-size: contain;
         background-position-x: right;
+    }
+}
+
+@media (min-width: 481px) {
+    .product .wrapper {
+        --gutter: 60px;
+    }
+
+    .product.dotgrid .image {
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        height: min-content;
+        overflow: hidden;
+    }
+
+    .product .outer-main {
+        width: calc(100% - 85px);
+        height: 100%;
+        margin: 0 0 0 85px;
+    }
+
+    .product .outer-thumb {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 

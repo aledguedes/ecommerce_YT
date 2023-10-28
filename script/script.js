@@ -1,9 +1,10 @@
-//slider
+console.log('single page');
 
+//slider
 const swiper = new Swiper('.sliderbox', {
     loop: true,
     effect: 'fade',
-    autoHeigth: true,
+    autoHeight: true,
 
     // If we need pagination
     pagination: {
@@ -13,7 +14,6 @@ const swiper = new Swiper('.sliderbox', {
 });
 
 // carousel
-
 const carousel = new Swiper('.carouselbox', {
 
     spaceBetween: 30,
@@ -45,6 +45,32 @@ const carousel = new Swiper('.carouselbox', {
             centeredSliders: false,
         },
     },
+});
+
+/* ************************ PAGE-SINGLE ************************ */
+
+// product image > single page
+const thumbImage = new Swiper('.thumbnail-image', {
+    // loop: true,
+    direction: 'vertical',
+    spaceBetween: 15,
+    slidesPerView: 1,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+const mainImage = new Swiper('.main-image', {
+    loop: true,
+    autoHeight: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    thumbs: {
+        swiper: thumbImage,
+    },
+    
 });
 
 const triggerOpen = document.querySelectorAll('[trigger-button]');
