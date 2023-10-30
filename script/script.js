@@ -1,5 +1,3 @@
-console.log('single page');
-
 //slider
 const swiper = new Swiper('.sliderbox', {
     loop: true,

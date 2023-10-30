@@ -243,7 +243,7 @@
 
         <main>
             <div class="section">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="wrap">
                         <div class="product dotgrid">
                             <div class="wrapper">
@@ -251,12 +251,23 @@
                                     <div class="outer-main">
                                         <div class="main-image swiper">
                                             <div class="wrap swiper-wrapper">
-                                                <div class="item swiper-slide"> <img src="assets/product_01.jpg" alt=""></div>
-                                                <div class="item swiper-slide"> <img src="assets/product_01b.jpg" alt=""></div>
-                                                <div class="item swiper-slide"> <img src="assets/product_06.jpg" alt=""></div>
-                                                <div class="item swiper-slide"> <img src="assets/product_06b.jpg" alt=""></div>
-                                                <div class="item swiper-slide"> <img src="assets/product_02.jpg" alt=""></div>
-                                                <div class="item swiper-slide"> <img src="assets/product_02.jpg" alt=""></div>
+                                                <div class="item swiper-slide"><img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="item swiper-slide"><img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="item swiper-slide"><img src="assets/product_06.jpg" alt="">
+                                                </div>
+                                                <div class="item swiper-slide"><img src="assets/product_06b.jpg" alt="">
+                                                </div>
+                                                <div class="item swiper-slide"><img src="assets/product_02.jpg" alt="">
+                                                </div>
+                                                <div class="item swiper-slide"><img src="assets/product_02.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-pagination">
+                                            <div class="swiper-pagination">
+                                                <!-- AQUI VEM OS BUTTONS OU CIRCLES DE SLIDES -->
                                             </div>
                                         </div>
                                     </div>
@@ -264,34 +275,576 @@
                                         <div class="thumbnail-image swiper">
                                             <div class="wrap swiper-wrapper">
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_01.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_01.jpg" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_01b.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_01b.jpg" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_06.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_06.jpg" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_06b.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_06b.jpg" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_02.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_02.jpg" alt="">
+                                                    </div>
                                                 </div>
                                                 <div class="item swiper-slide">
-                                                    <div class="thumb-wrap"><img src="assets/product_02.jpg" alt=""></div>
+                                                    <div class="thumb-wrap"><img src="assets/product_02.jpg" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sumary"></div>
+                                <div class="summary">
+                                    <div class="entry">
+                                        <h1 class="title">The Sweater in Tosca</h1>
+                                        <div class="product-group">
+                                            <div class="product-price">
+                                                <span class="current">$45.00</span>
+                                                <div class="wrap">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="discount">-25%</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="ri-star-fill"></i>
+                                                    <span>4.8</span>
+                                                </span>
+                                                <a href="">3 Reviews</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-color">
+                                            <span>Colors:</span>
+                                            <div class="wrap">
+                                                <button class="tosca selected"></button>
+                                                <button class="brown"></button>
+                                                <button class="ocean"></button>
+                                            </div>
+                                        </div>
+                                        <div class="product-size">
+                                            <span>Size:</span>
+                                            <div class="wrap">
+                                                <button disabled>S</button>
+                                                <button>M</button>
+                                                <button class="selected">L</button>
+                                                <button>XL</button>
+                                                <button>XXL</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-stok">
+                                            <div class="wrap">
+                                                <strong>201</strong>
+                                                <span class="grey-color">in stok</span>
+                                                <i class="ri-checkbox-circle-line"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-action">
+                                            <div class="qty">
+                                                <button class="decrease">-</button>
+                                                <input type="text" value="1">
+                                                <button class="increase">+</button>
+                                            </div>
+                                            <div class="addcart button">
+                                                <button type="submit" class="primary-btn">Add to cart</button>
+                                            </div>
+                                            <div class="buynow button">
+                                                <button type="submit" class="secondary-btn">Buy now</button>
+                                            </div>
+                                        </div>
+                                        <div class="product-control list-inline">
+                                            <ul>
+                                                <li><a href=""><i class="ri-heart-line"></i><span>Add to
+                                                            whislist</span></a></li>
+                                                <li><a href=""><i
+                                                            class="ri-arrow-left-right-line"></i><span>Compare</span></a>
+                                                </li>
+                                                <li><a href=""><i
+                                                            class="ri-share-forward-line"></i><span>Share</span></a>
+                                                </li>
+                                                <li><a href=""><i class="ri-question-line"></i><span>Ask
+                                                            Question</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="shipping">
+                                            <ul>
+                                                <li>
+                                                    <i class="ri-gift-line"></i>
+                                                    <span>Free shipping & return</span>
+                                                    <span class="grey-color">On borders over $100</span>
+                                                </li>
+                                                <li>
+                                                    <i class="ri-truck-line"></i>
+                                                    <span>Estimated delivery</span>
+                                                    <span class="grey-color">01 - 07 Jan, 2024</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-stok">
+                                            <div class="wrap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="product detail"></div>
+                        <div class="product detail">
+                            <div class="wrapper tabbed">
+                                <nav class="list-inline scrollto">
+                                    <ul class="wrapper">
+                                        <li class="active">
+                                            <a href="#0" class="tabbed-trigger"
+                                                data-id="product-description"><span>Product detail</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="tabbed-trigger" data-id="product-custom">
+                                                <span>Custom</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="tabbed-trigger" data-id="product-review">
+                                                <span>Reviews</span><span class="item-floating">3</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="tabbed-trigger" data-id="product-shipping">
+                                                <span>Shipping</span></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div id="product-description" class="product-about description active">
+                                    <div class="text-block">
+                                        <h3>The Sweater in Tosca</h3>
+                                        <div class="grey-color">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis in
+                                                soluta quisquam enim totam atque dolorem saepe?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+                                                error obcaecati, illo harum commodi perspiciatis eligendi distinctio
+                                                illum fuga molestias id numquam praesentium, asperiores deleniti ipsam
+                                                rerum sed saepe inventore.</p>
+                                        </div>
+                                        <div class="dotgrid">
+                                            <div class="wrapper">
+                                                <div class="list-block">
+                                                    <h4>What is this?</h4>
+                                                    <ul class="grey-color p-0">
+                                                        <li>95% Polyester, 5% Spandex</li>
+                                                        <li>Wrap closure</li>
+                                                        <li>hand Wash Only</li>
+                                                        <li>Simple yet flatering dress</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-block">
+                                                    <h4>What makes our products unique?</h4>
+                                                    <p class="grey-color">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Incidunt hic obcaecati quasi ea dolorum autem architecto enim!
+                                                        Obcaecati ipsam. Quisquam.
+                                                    </p>
+                                                </div>
+                                                <div class="list-block">
+                                                    <h4>What makes our products unique?</h4>
+                                                    <p class="grey-color">
+                                                        Hand wash or gentle machine wash with cold water.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="product-custom" class="product-about custom">
+                                    <h3>Owr custom sizes</h3>
+                                    <div class="image">
+                                        <img src="assets/custom-size.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div id="product-review" class="product-about review">
+                                    <div class="wrapper">
+                                        <h3>Rating & Review</h3>
+                                        <div class="head-review">
+                                            <div class="sum-rating">
+                                                <strong>4.8</strong>
+                                                <span>3 reviews</span>
+                                            </div>
+                                            <div class="button">
+                                                <a href="" class="primary-btn">Whrite a review</a>
+                                            </div>
+                                        </div>
+                                        <div class="body-review">
+                                            <div class="profile">
+                                                <div class="thumb-name">
+                                                    <div class="image">
+                                                        <img src="assets/ig_01.jpg" alt="">
+                                                    </div>
+                                                    <div class="grouping">
+                                                        <div class="name">Sara</div>
+                                                        <div class="rating">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                        <div class="date grey-color">On October 29, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    <strong>Awesome Product</strong>
+                                                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Distinctio dolorem vero perferendis magnam
+                                                        accusantium, ex velit, ipsa qui voluptatum suscipit commodi nemo
+                                                        odio sequi aspernatur numquam fugiat corporis perspiciatis.
+                                                        Quisquam.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="body-review">
+                                            <div class="profile">
+                                                <div class="thumb-name">
+                                                    <div class="image">
+                                                        <img src="assets/ig_02.jpg" alt="">
+                                                    </div>
+                                                    <div class="grouping">
+                                                        <div class="name">Oolonéia</div>
+                                                        <div class="rating">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                        <div class="date grey-color">On October 29, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    <strong>Awesome Product</strong>
+                                                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Quo blanditiis placeat sed repellat, vitae
+                                                        possimus aperiam odit nostrum eius at, est distinctio nesciunt
+                                                        reiciendis architecto molestias labore similique sunt ducimus?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="body-review">
+                                            <div class="profile">
+                                                <div class="thumb-name">
+                                                    <div class="image">
+                                                        <img src="assets/ig_03.jpg" alt="">
+                                                    </div>
+                                                    <div class="grouping">
+                                                        <div class="name">Micalatéia</div>
+                                                        <div class="rating">
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                            <i class="ri-star-fill"></i>
+                                                        </div>
+                                                        <div class="date grey-color">On October 29, 2023</div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    <strong>Awesome Product</strong>
+                                                    <p class="grey-color">Lorem ipsum dolor sit, amet consectetur
+                                                        adipisicing elit. Expedita, dolores, mollitia dolore qui quidem
+                                                        dolorem similique, deleniti recusandae harum eius ea nam
+                                                        facilis! Enim, neque eum maxime at perspiciatis nihil.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="product-shipping" class="product-about shipping">
+                                    <div class="grey-color">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt quia
+                                            magni, suscipit tenetur ducimus delectus dolorum explicabo non maxime et
+                                            necessitatibus repellat voluptatem minima rerum est, repudiandae quas
+                                            veritatis.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et beatae vel autem
+                                            laborum, fuga consequuntur minus sed nulla reprehenderit error vero corrupti
+                                            similique rerum alias molestias deleniti libero voluptatum impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- caroussel structure, copy from index.html -->
+
+            <div class="carousel">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h2 class="title">New Arrivals</h2>
+                        </div>
+                        <div class="inner-wrapper">
+                            <div class="dotgrid carouselbox swiper">
+                                <!-- copy from mega menu structure -->
+                                <div class="wrapper swiper-wrapper">
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_01.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_01b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_02.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_02b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_03.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_03b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_03b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_01b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_02b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_03.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_01.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                    </li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">The Swater
+                                                    in Tosca</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">$62.00</span>
+                                                <span class="current">$45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="nav">
+                                    <div class="swiper-button-next">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                        <i class="ri-arrow-left-line"></i>
+                                    </div>
+                                </div>
+
+                                <!-- end copy -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end copy carousel index.html -->
         </main>
 
         <footer>
@@ -427,6 +980,86 @@
         </div>
     </div>
 
+    <!-- <div id="data-share" class="data-popup data-share">
+        <div class="wrap">
+            <div class="data-content">
+                <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+                <div class="form">
+                    <label>Copy link</label>
+                    <input type="text" name="" id="" value="https://www.youtube.com/watch?v=p8vEWKEuJMw">
+                    <span><i class="ri-file-copy-line"></i></span>
+                </div>
+
+                <div class="media-share list-inline">
+                    <label>Share</label>
+                    <ul>
+                        <li><a href=""><i class="ri-facebook-line"></i></a></li>
+                        <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                        <li><a href=""><i class="ri-pinterest-line"></i></a></li>
+                        <li><a href=""><i class="ri-youtube-line"></i></a></li>
+                        <li><a href=""><i class="ri-tiktok-line"></i></a></li>
+                        <li><a href=""><i class="ri-whatsapp-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div id="data-question" class="data-popup d-question">
+        <div class="wrap">
+            <div class="data-content">
+                <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+                <h3>The question</h3>
+                <form action="">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="Email"></div>
+                    <div><textarea placeholder="Your question is..." name="" id="" cols="30" rows="5"></textarea></div>
+                    <div class="button">
+                        <button class="secondary-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="data-review" class="data-popup d-review">
+        <div class="wrap">
+            <div class="data-content">
+                <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+                <h3>Write a Review</h3>
+                <form action="">
+                    <div class="dotgrid">
+                        <div class="wrapper">
+                            <div><input type="text" placeholder="Name"></div>
+                            <div><input type="text" placeholder="Email"></div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span>Your Ratting:</span>
+                        <div class="stars">
+                            <input type="radio" name="rating" id="star5">
+                            <label for="star5"><i class="ri-star-fill"></i></label>
+
+                            <input type="radio" name="rating" id="star4">
+                            <label for="star4"><i class="ri-star-fill"></i></label>
+
+                            <input type="radio" name="rating" id="star3">
+                            <label for="star3"><i class="ri-star-fill"></i></label>
+
+                            <input type="radio" name="rating" id="star2">
+                            <label for="star2"><i class="ri-star-fill"></i></label>
+
+                            <input type="radio" name="rating" id="star1">
+                            <label for="star1"><i class="ri-star-fill"></i></label>
+                        </div>
+                    </div>
+                    <div><input type="text" placeholder="Review title"></div>
+                    <div><textarea placeholder="Your review is..." name="" id="" cols="30" rows="5"></textarea></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -435,3 +1068,8 @@
 </body>
 
 </html>
+
+<!-- 
+    https://www.youtube.com/watch?v=p8vEWKEuJMw
+    1 14 00
+ -->
