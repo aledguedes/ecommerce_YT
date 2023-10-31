@@ -218,9 +218,18 @@
                         <div class="header-rigth">
                             <div class="list-inline">
                                 <ul>
-                                    <li><a href=""><i class="ri-search-line"></i></a></li>
-                                    <li><a href="#0" trigger-button data-target="data-cart"><span class="item-floating">5</span><i
-                                                class="ri-shopping-bag-line"></i></a></li>
+                                    <li>
+                                        <a href="#0" trigger-button data-target="search-float">
+                                            <i class="ri-search-line"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <!-- trigger-button data-target="data-share" -->
+                                        <a href="#0" trigger-button data-target="data-share">
+                                            <span class="item-floating">5</span>
+                                            <i class="ri-shopping-bag-line"></i>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -304,7 +313,7 @@
                                 </div>
                                 <div class="summary">
                                     <div class="entry">
-                                        <h1 class="title text-center">The Sweater in Tosca</h1>
+                                        <h1 class="title">The Sweater in Tosca</h1>
                                         <div class="product-group">
                                             <div class="product-price">
                                                 <span class="current">$45.00</span>
@@ -421,7 +430,7 @@
                                 </nav>
                                 <div id="product-description" class="product-about description active">
                                     <div class="text-block">
-                                        <h3 class="text-center">The Sweater in Tosca</h3>
+                                        <h3>The Sweater in Tosca</h3>
                                         <div class="grey-color">
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis in
                                                 soluta quisquam enim totam atque dolorem saepe?</p>
@@ -469,7 +478,7 @@
 
                                 <div id="product-review" class="product-about review">
                                     <div class="wrapper">
-                                        <h3 class="text-center">Rating & Review</h3>
+                                        <h3>Rating & Review</h3>
                                         <div class="head-review">
                                             <div class="sum-rating">
                                                 <strong>4.8</strong>
@@ -903,7 +912,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bottom">
+                        <div class="bottom d-flex">
                             <div class="list-inline">
                                 <ul>
                                     <li><a href=""><i class="ri-facebook-line"></i></a></li>
@@ -959,7 +968,7 @@
                         </li>
                         <li><a href=""><span>Discount</span></a></li>
                         <li class="has-child">
-                            <a href="page-single.html">
+                            <a href="">
                                 <span>Specials</span>
                                 <span class="child-trigger"><i class="ri-arrow-down-s-line"></i></span>
                             </a>
@@ -1064,14 +1073,15 @@
 
     <div id="data-cart" class="cart-menu">
         <div class="wrap">
-            <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
-
+            <a href="#0" class="close-trigger" close-button>
+                <i class="ri-close-line"></i>
+            </a>
             <div class="scrollto cart-outer">
                 <div class="wrapper">
                     <div class="cart-list">
                         <div class="wrapper">
                             <div class="cart-header">
-                                <h2 class="text-center">Shopping Cart</h2>
+                                <h2>Shopping Cart</h2>
                             </div>
                             <div class="cart-body scrollto">
                                 <div class="product-list">
@@ -1196,23 +1206,23 @@
                                                     <input type="radio" class="checker" name="shipping">
                                                     <label for="">Free</label>
                                                 </div>
-                                                <span class="value">0.00</span>
+                                                <span class="value">$0.00</span>
                                             </li>
                                             <li>
                                                 <div>
                                                     <input type="radio" class="checker" name="shipping">
                                                     <label for="">Flat</label>
                                                 </div>
-                                                <span class="value">7.00</span>
+                                                <span class="value">$7.00</span>
                                             </li>
                                         </ul>
                                         <li>
                                             <span>Promo discount</span>
-                                            <span class="value">- 0.00</span>  
+                                            <span class="value">- $0.00</span>  
                                         </li>
                                         <li class="total">
                                             <span>Total</span>
-                                            <span class="value">147.00</span>  
+                                            <span class="value">$147.00</span>  
                                         </li>
                                     </ul>
                                 </div>

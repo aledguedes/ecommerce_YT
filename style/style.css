@@ -173,8 +173,57 @@ h3 .red {
     font-size: clamp(30px, -0.875em + 8.333vw, var(--fs-max, 40px));
 }
 
-.grey-color {
+.grey-link {
+    color: inherit;
+    transform: var(--transiction-color);
+}
+
+.grey-color,
+.grey-link:hover {
     color: var(--grey-color);
+}
+
+input.checker {
+    position: relative;
+    padding: 5px;
+    margin: 0px 5px 0px 2px;
+    cursor: pointer;
+}
+
+input.checker::after,
+input.checker::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+input.checker::before {
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    border: 1px solid var(--grey-color);
+    border-radius: 50%;
+    transition: var(--transiction-border);
+}
+
+input.checker::after {
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    transition: var(--transiction-transform);
+}
+
+input.checker:checked:before {
+    border-color: var(--dark-color);
+}
+
+input.checker:checked:after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* ------------------------------ *
@@ -557,7 +606,8 @@ form :where(input, textarea, select)::placeholder {
     background-color: #c6c6c6;
 }
 
-.mobile-menu .wrap, .cart-menu .wrap {
+.mobile-menu .wrap,
+.cart-menu .wrap {
     position: relative;
     max-width: calc(100% - 40px);
     width: 360px;
@@ -568,7 +618,8 @@ form :where(input, textarea, select)::placeholder {
     transition: var(--transiction-transform);
 }
 
-.mobile-menu.active .wrap, .cart-menu.active .wrap {
+.mobile-menu.active .wrap,
+.cart-menu.active .wrap {
     transform: translateX(0);
     border: 1px solid #c6c6c6;
 }
@@ -590,7 +641,8 @@ form :where(input, textarea, select)::placeholder {
     justify-content: center;
 }
 
-.mobile-menu .main-menu, .cart-menu .cart-list {
+.mobile-menu .main-menu,
+.cart-menu .cart-list {
     height: 100%;
     padding: 0 20px;
     display: flex;
@@ -956,12 +1008,14 @@ main>div .heading {
     color: var(--white-color);
 }
 
-.sort-data, .data-popup {
+.sort-data,
+.data-popup {
     display: none;
     animation: var(--fade);
 }
 
-.sort-data.active, .data-popup.active {
+.sort-data.active,
+.data-popup.active {
     display: block;
 }
 
@@ -1721,7 +1775,7 @@ main>div .heading {
     margin-top: 20px;
 }
 
-.data-popup form > div {
+.data-popup form>div {
     margin-top: 20px;
 }
 
@@ -1730,7 +1784,8 @@ form .button button,
     cursor: pointer;
 }
 
-.data-popup h3, form .button {
+.data-popup h3,
+form .button {
     text-align: center;
 }
 
@@ -1751,7 +1806,7 @@ form .button button,
     margin: 0;
 }
 
-.d-review .stars > input:checked ~ label {
+.d-review .stars>input:checked~label {
     color: #ffa502;
 }
 
@@ -1784,6 +1839,11 @@ form .button button,
     flex-direction: column;
 }
 
+.cart-menu .cart-outer>.wrapper {
+    height: 100vh;
+    padding: 0;
+}
+
 .cart-menu .cart-header {
     padding: 30px 0;
 }
@@ -1810,7 +1870,7 @@ form .button button,
     border-radius: 5px;
 }
 
-.product-list .quantity .control > * {
+.product-list .quantity .control>* {
     height: 30px;
     border: 0;
     outline: 0;
@@ -1828,6 +1888,143 @@ form .button button,
 .product-list .thumbnail {
     width: 70px;
     margin-right: 20px;
+}
+
+.product-list .variants {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.product-list .variants h4 {
+    line-height: initial;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-list .variants>div {
+    font-size: var(--fs-14);
+    line-height: 1.4;
+}
+
+.product-list .variants .item-remove {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.product-list .item-remove {
+    color: var(--red-color);
+    background-color: #ff47571a;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: var(--transiction-color), var(--transiction-background);
+}
+
+.product-list .item-remove:hover {
+    color: var(--ligth-color);
+    background-color: var(--dark-color);
+}
+
+.cart-menu .cart-footer {
+    margin: 0 -20px;
+    padding: 20px;
+    background-color: var(--fashwhite-color);
+    margin-top: auto;
+}
+
+.cart-footer form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cart-footer form .input {
+    line-height: 34px;
+    border: 0;
+    border-radius: 7px;
+    background-color: var(--white-color);
+}
+
+.cart-footer form .submit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 90px;
+    height: 34px;
+    line-height: 1;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    padding: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: var(--transiction-background);
+}
+
+.cart-footer form .submit:hover {
+    background-color: var(--dark-color);
+}
+
+.cart-footer .math-pricing ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-footer .math-pricing ul ul {
+    width: 100%;
+}
+
+.cart-footer .math-pricing ul li span:not(.value),
+.cart-footer .math-pricing ul li label {
+    color: var(--grey-color);
+}
+
+.cart-footer .math-pricing ul ul li:not(:first-child) {
+    padding-left: 20px;
+}
+
+.cart-footer .math-pricing .total {
+    font-size: 18px;
+    font-weight: var(--fw600);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--ligth-color);
+}
+
+.cart-footer .button {
+    text-align: center;
+}
+
+.cart-footer .button .secondary-btn {
+    display: block;
+    margin: 20px 0px 10px;
+}
+
+.cart-footer .button .secondary-btn {
+    background-color: var(--primary-color);
+    border: 0;
+    text-transform: uppercase;
+    line-height: 54px;
+    border-radius: 7px;
+    min-width: 240px;
+}
+
+.cart-footer .button .secondary-btn:hover {
+    background-color: var(--grey-color);
+    color: var(--white-color);
+}
+
+.cart-menu .product-list > .wrapper {
+    overflow-y: auto;
+    max-height: 400px;
+    /* no video 400px */
 }
 
 
