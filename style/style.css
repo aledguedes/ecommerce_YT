@@ -511,7 +511,8 @@ form :where(input, textarea, select)::placeholder {
 
 .overlay,
 .mobile-menu,
-.data-popup {
+.data-popup,
+.cart-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -539,7 +540,8 @@ form :where(input, textarea, select)::placeholder {
     MOBILE MENU
 * ------------------------------ */
 
-.mobile-menu {
+.mobile-menu,
+.cart-menu {
     z-index: 2;
     /* 1001 */
     pointer-events: none;
@@ -548,13 +550,14 @@ form :where(input, textarea, select)::placeholder {
     opacity: 0;
 }
 
-.mobile-menu.active {
+.mobile-menu.active,
+.cart-menu.active {
     visibility: visible;
     opacity: 1;
     background-color: #c6c6c6;
 }
 
-.mobile-menu .wrap {
+.mobile-menu .wrap, .cart-menu .wrap {
     position: relative;
     max-width: calc(100% - 40px);
     width: 360px;
@@ -565,7 +568,7 @@ form :where(input, textarea, select)::placeholder {
     transition: var(--transiction-transform);
 }
 
-.mobile-menu.active .wrap {
+.mobile-menu.active .wrap, .cart-menu.active .wrap {
     transform: translateX(0);
     border: 1px solid #c6c6c6;
 }
@@ -575,7 +578,8 @@ form :where(input, textarea, select)::placeholder {
 }
 
 .mobile-menu .close-trigger,
-.mobile-menu .child-trigger {
+.mobile-menu .child-trigger,
+.cart-menu .close-trigger {
     position: absolute;
     top: 0;
     right: -45px;
@@ -586,7 +590,7 @@ form :where(input, textarea, select)::placeholder {
     justify-content: center;
 }
 
-.mobile-menu .main-menu {
+.mobile-menu .main-menu, .cart-menu .cart-list {
     height: 100%;
     padding: 0 20px;
     display: flex;
@@ -1760,6 +1764,71 @@ form .button button,
     flex-direction: row-reverse;
 }
 
+/* ------------------------------ *
+    #CART MENU
+* ------------------------------ */
+
+.cart-menu .wrap {
+    float: right;
+    --transX: 100%
+}
+
+.cart-menu .close-trigger {
+    right: auto;
+    left: -40px;
+}
+
+.cart-menu .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-menu .cart-header {
+    padding: 30px 0;
+}
+
+.product-list li {
+    margin-bottom: 30px;
+}
+
+.product-list .grouping {
+    position: relative;
+    float: left;
+    padding-left: 45px;
+}
+
+.product-list .quantity {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 30px;
+}
+
+.product-list .quantity .control {
+    background-color: var(--fashwhite-color);
+    border-radius: 5px;
+}
+
+.product-list .quantity .control > * {
+    height: 30px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+.product-list .quantity button {
+    font-style: 20px;
+    line-height: initial;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-list .thumbnail {
+    width: 70px;
+    margin-right: 20px;
+}
 
 
 
