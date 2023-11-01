@@ -68,7 +68,7 @@ const mainImage = new Swiper('.main-image', {
     thumbs: {
         swiper: thumbImage,
     },
-    
+
 });
 
 const triggerOpen = document.querySelectorAll('[trigger-button]');
@@ -80,16 +80,21 @@ for (let i = 0; i < triggerOpen.length; i++) {
         targetEl = document.querySelector(`#${currentId}`);
 
     const openData = function () {
-        targetEl.classList.remove('active');
+        targetEl?.classList.remove('active');
         // overlay.classList.remove('active');
     };
 
     triggerOpen[i].addEventListener('click', function () {
-        targetEl.classList.add('active');
+        targetEl?.classList.add('active');
         // overlay.classList.add('active');
     });
 
-    targetEl.querySelector('[close-button]').addEventListener('click', openData);
+    const closeButton = targetEl?.querySelector('[close-button]');
+    if (closeButton) {
+        closeButton.addEventListener('click', openData);
+    }
+
+    // targetEl.querySelector('[close-button]').addEventListener('click', openData);
     // overlay.addEventListener('click', openData);
 }
 
@@ -114,11 +119,11 @@ subMenu.forEach((menu) => menu.addEventListener('click', function (e) {
 const sorter = document.querySelector('.sort-list');
 if (sorter) {
     const sortLi = sorter.querySelectorAll('li');
-    sorter.querySelector('.opt-trigger').addEventListener('click', function() {
+    sorter.querySelector('.opt-trigger').addEventListener('click', function () {
         sorter.querySelector('ul').classList.toggle('show');
     });
 
-    sortLi.forEach(item => item.addEventListener('click', function() {
+    sortLi.forEach(item => item.addEventListener('click', function () {
         sortLi.forEach((li) => li != this ? li.classList.remove('active') : null);
 
         this.classList.add('active');
@@ -129,11 +134,11 @@ if (sorter) {
 
 // tabbed
 
-const trigger = document.querySelectorAll('.tabbed-trigger'), 
+const trigger = document.querySelectorAll('.tabbed-trigger'),
     content = document.querySelectorAll('.tabbed > div');
 
 trigger.forEach((btn) => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
         let dataTarget = this.dataset.id;
         body = document.querySelector(`#${dataTarget}`);
 

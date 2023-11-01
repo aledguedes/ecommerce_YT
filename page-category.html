@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="page" class="page-single">
+    <div id="page" class="page-category">
         <header>
             <div class="inner-header">
                 <div class="container wide">
@@ -215,7 +215,7 @@
                             </nav>
                             <div class="branding"><a href="">reccoShop</a></div>
                         </div>
-                        <div class="header-rigth">
+                        <div class="header-right">
                             <div class="list-inline">
                                 <ul>
                                     <li>
@@ -225,7 +225,7 @@
                                     </li>
                                     <li>
                                         <!-- trigger-button data-target="data-share" -->
-                                        <a href="#0" trigger-button data-target="data-share">
+                                        <a href="#0" trigger-button data-target="data-cart">
                                             <span class="item-floating">5</span>
                                             <i class="ri-shopping-bag-line"></i>
                                         </a>
@@ -259,7 +259,7 @@
                         <div class="content">
                             <div id="sidebar-filter" class="sidebar">
                                 <div class="wrap">
-                                    <a href="#0" class="close-trigger"><i class="ri-close-line"></i></a>
+                                    <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
                                     <div class="sidebar-content">
                                         <div class="sidebar-title">Filter</div>
                                         <div class="widget">
@@ -300,7 +300,7 @@
 
                                         <div class="widget">
                                             <div class="summary">
-                                                <input type="checkbox" name="cats" id="aac" checked>
+                                                <input type="checkbox" name="cats" id="aac">
                                                 <label for="aac">
                                                     <span>Categories:</span>
                                                     <i class="ri-arrow-down-s-line"></i>
@@ -328,7 +328,7 @@
 
                                         <div class="widget">
                                             <div class="summary">
-                                                <input type="checkbox" name="cats" id="aad" checked>
+                                                <input type="checkbox" name="cats" id="aad">
                                                 <label for="aad">
                                                     <span>Brands:</span>
                                                     <i class="ri-arrow-down-s-line"></i>
@@ -352,8 +352,8 @@
                                         <div class="widget">
                                             <div class="summary">
                                                 <label><span>Price</span></label>
-                                                <div class="range-tracker">
-                                                    <input type="range" value="1" min="0" max="500" step="1">
+                                                <div class="range-track">
+                                                    <input type="range" value="28" min="0" max="500" step="1">
                                                 </div>
                                                 <div class="price-range grey-color">
                                                     <span>$30</span>
@@ -364,7 +364,237 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category-content"></div>
+                            <div class="category-content">
+                                <div class="sorter">
+                                    <a href="#0" class="menu-trigger" trigger-button data-target="sidebar-filter">
+                                        <i class="ri-filter-2-fill"></i>
+                                    </a>
+                                    <div class="left">
+                                        <span class="grey-color">Showing 9 of 35 results</span>
+                                    </div>
+                                    <div class="right">
+                                        <div class="sort-list">
+                                            <div class="wrap">
+                                                <div class="opt-trigger">
+                                                    <span class="value">Default sorting</span>
+                                                    <i class="ri-arrow-down-s-line"></i>
+                                                </div>
+                                                <ul>
+                                                    <li class="active"><a href="#0">Default Sorting</a></li>
+                                                    <li><a href="#0">Popular</a></li>
+                                                    <li><a href="#0">Rating</a></li>
+                                                    <li><a href="#0">Lasted</a></li>
+                                                    <li><a href="#0">Price: low to high</a></li>
+                                                    <li><a href="#0">Price: high to low</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="list-inline">
+                                            <ul>
+                                                <li><a href=""><i class="ri-pause-mini-line"></i></a></li>
+                                                <li><a href=""><i class="ri-list-check-2"></i></a></li>
+                                                <li><a href=""><i class="ri-layout-grid-line"></i></a></li>
+                                                <li><a href=""><i class="ri-layout-masonry-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- copy from tabbed at index.html -->
+                                <div class="dotgrid">
+                                    <div class="wrapper">
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_01.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_01b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a>
+                                                        </li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">The Swater
+                                                        in Tosca</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">$62.00</span>
+                                                    <span class="current">$45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- end copy  tabbed from index.html -->
+                                <div class="button">
+                                    <a href="" class="primary-btn">Load More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -500,86 +730,6 @@
                     <a href="" class="primary-btn">Register</a>
 
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="data-share" class="data-popup data-share">
-        <div class="wrap">
-            <div class="data-content">
-                <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
-                <div class="form">
-                    <label>Copy link</label>
-                    <input type="text" name="" id="" value="https://www.youtube.com/watch?v=p8vEWKEuJMw">
-                    <span><i class="ri-file-copy-line"></i></span>
-                </div>
-
-                <div class="media-share list-inline">
-                    <label>Share</label>
-                    <ul>
-                        <li><a href=""><i class="ri-facebook-line"></i></a></li>
-                        <li><a href=""><i class="ri-instagram-line"></i></a></li>
-                        <li><a href=""><i class="ri-pinterest-line"></i></a></li>
-                        <li><a href=""><i class="ri-youtube-line"></i></a></li>
-                        <li><a href=""><i class="ri-tiktok-line"></i></a></li>
-                        <li><a href=""><i class="ri-whatsapp-line"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="data-question" class="data-popup d-question">
-        <div class="wrap">
-            <div class="data-content">
-                <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
-                <h3>The question</h3>
-                <form action="">
-                    <div><input type="text" placeholder="Name"></div>
-                    <div><input type="text" placeholder="Email"></div>
-                    <div><textarea placeholder="Your question is..." name="" id="" cols="30" rows="5"></textarea></div>
-                    <div class="button">
-                        <button class="secondary-btn">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div id="data-review" class="data-popup d-review">
-        <div class="wrap">
-            <div class="data-content">
-                <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
-                <h3>Write a Review</h3>
-                <form action="">
-                    <div class="dotgrid">
-                        <div class="wrapper">
-                            <div><input type="text" placeholder="Name"></div>
-                            <div><input type="text" placeholder="Email"></div>
-                        </div>
-                    </div>
-                    <div class="rating">
-                        <span>Your Ratting:</span>
-                        <div class="stars">
-                            <input type="radio" name="rating" id="star5">
-                            <label for="star5"><i class="ri-star-fill"></i></label>
-
-                            <input type="radio" name="rating" id="star4">
-                            <label for="star4"><i class="ri-star-fill"></i></label>
-
-                            <input type="radio" name="rating" id="star3">
-                            <label for="star3"><i class="ri-star-fill"></i></label>
-
-                            <input type="radio" name="rating" id="star2">
-                            <label for="star2"><i class="ri-star-fill"></i></label>
-
-                            <input type="radio" name="rating" id="star1">
-                            <label for="star1"><i class="ri-star-fill"></i></label>
-                        </div>
-                    </div>
-                    <div><input type="text" placeholder="Review title"></div>
-                    <div><textarea placeholder="Your review is..." name="" id="" cols="30" rows="5"></textarea></div>
-                </form>
             </div>
         </div>
     </div>
